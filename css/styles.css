@@ -1,0 +1,134 @@
+/* * {
+    outline: 3px solid red;
+} */
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.parent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h1 + span {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin: 80px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(90, 90, 90, 0.541);
+    min-width: 300px;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card > div {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 120px;
+    height: 120px;
+    border-color: blue;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.imageContainer > img {
+    width: 120px;
+    height: auto;
+}
+
+.card > img {
+    width: 30px;
+    height: 30px;
+    margin-top: -20px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.locationInfo {
+    margin-top: 16px;
+    display: flex;
+    color: grey;
+    align-items: center;
+}
+
+.locationInfo > img{
+    align-items: center;
+    width: 12px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+
+.status > img {
+    width: 10px;
+    height: auto;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+div > p + a {
+    margin-top: 20px;    
+    padding: 10px 80px;
+    background-color: white;
+    color: blue;
+    border: 3px solid blue;
+}
+
+div > a + a {
+    padding: 10px 60px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
